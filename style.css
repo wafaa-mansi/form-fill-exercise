@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial;
   background-color: #f4f4f4;
@@ -57,4 +58,65 @@ td {
   color: white;
   border: none;
   padding: 6px 10px;
+=======
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+}
+
+.container {
+  width: 500px;
+  margin: 50px auto;
+  background: white;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+#saveBtn {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(0, 52, 165);
+  color: white;
+  border: none;
+}
+
+#saveBtn:disabled {
+  background-color: rgb(113, 119, 220);
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+  text-align: left;
+}
+
+.delete-btn {
+  background-color: rgb(119, 5, 5);
+  color: white;
+  border: none;
+  padding: 6px 10px;
+>>>>>>> 41ff819 (--user)
 }
