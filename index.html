@@ -14,37 +14,59 @@
 
     <h1>Form Fill Exercise</h1>
 
-    <div class="form-group">
-      <label>First Name</label>
-      <input
-        type="text"
-        id="firstName"
-        placeholder="Enter first name"
-      >
-    </div>
+    <label>First Name</label>
+<input type="text" id="firstName">
+<p id="firstNameError" class="error"></p>
 
-    <div class="form-group">
-      <label>Last Name</label>
-      <input
-        type="text"
-        id="lastName"
-        placeholder="Enter last name"
-      >
-    </div>
+<label>Last Name</label>
+<input type="text" id="lastName">
+<p id="lastNameError" class="error"></p>
 
-    <div class="form-group">
-      <label>Gender</label>
-
-      <select id="gender">
-        <option value="">Select gender...</option>
-        <option value="Female">Female</option>
-        <option value="Male">Male</option>
-      </select>
-    </div>
+<label>Gender</label>
+<select id="gender">
+  <option value="">Select Gender</option>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+</select>
+<p id="genderError" class="error"></p>
 
     <button id="saveBtn" disabled>
       Save
     </button>
+    <p>Live Users: <span id="userCount">0</span></p>
+    <p id="duplicateMsg"></p>
+    <input type="text" id="searchInput" placeholder="Search users">
+    <div>
+        <button class="filterGender" data-gender="All">All</button>
+        <button class="filterGender" data-gender="Male">Male</button>
+        <button class="filterGender" data-gender="Female">Female</button>
+    </div>
+    <div>
+        <button id="fnSort">First Name A-Z</button>
+        <button id="lnSort">Last Name A-Z</button>
+        
+    </div>
+    <div class="stats-container">
+
+  <div class="stat-card">
+    <h3>Total Users</h3>
+    <p id="totalUsers">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>Male</h3>
+    <p id="maleUsers">0</p>
+  </div>
+
+  <div class="stat-card">
+    <h3>Female</h3>
+    <p id="femaleUsers">0</p>
+  </div>
+
+</div>
+
+    
+
 
     <h2>Saved Users</h2>
 
@@ -62,8 +84,13 @@
 
       </tbody>
     </table>
+    
+    <button id="clearBtn">Clear</button>
+    
 
   </div>
+  <div id="pag"></div>
+  <p id="pageNb"></p>
 
   <script src="Form.js"></script>
 

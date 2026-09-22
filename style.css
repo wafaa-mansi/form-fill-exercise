@@ -58,3 +58,62 @@ td {
   border: none;
   padding: 6px 10px;
 }
+#clearAllBtn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  cursor: pointer;
+}
+.user-count {
+  display: inline-block;
+  background-color: #f4f6f8;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+#userCount {
+  background-color: #222;
+  color: white;
+  padding: 4px 9px;
+  border-radius: 20px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+.error {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.stats-container {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.stat-card {
+  flex: 1;
+  background-color: #f5f6fa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  margin: 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.stat-card p {
+  margin: 8px 0 0;
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
